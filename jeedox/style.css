@@ -1,0 +1,573 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+p{
+    text-align: justify;
+}
+
+a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: white;
+}
+ul{
+    list-style: none;
+}
+
+#nav{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: #06005c;
+    padding: 5px 25px 5px 20px;
+    /* height: 60px; */
+    z-index:1;
+}
+
+#nav .logo{ 
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+img{
+    width: 70px;
+}
+
+.menu{
+    /* border: 1px solid red; */
+    width: 700px;
+    height: 60px;
+    display: flex;
+    align-self: center;
+    align-content: space-between;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.menu ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu .menu-links li a:hover{
+    color: #cccdf8;
+}
+
+#banner{
+    /* border: 1px solid red; */
+    position: relative;
+}
+#banner img{
+    display: block;
+    width: 100%;
+}
+
+#banner .banner-block{
+    position: absolute;
+    top: 25%;
+    left: 12%;
+    padding: 20px;
+    width: 500px;
+}
+
+#banner .banner-block h4{
+    font-size: 42px;
+    margin-bottom: 10px;
+    color: rgb(6, 0, 92);
+}
+
+#banner .banner-block p{
+    /* border: 1px solid red; */
+    font-size: 22px;
+    margin-bottom: 14px;
+    color: #06005c;
+}
+
+#banner .banner-block a{
+    display: block;
+    background-color: #06005c;
+    border: 1px solid #06005c;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    padding: 10px 30px;
+    width: 150px;
+}
+
+#banner .banner-block a:hover{
+    background-color: white;
+    color: #06005c;
+    border: none;
+}
+
+#services, #works, #teams, #contact{
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    background-color: #cccdf8;
+    padding: 20px 40px 40px 40px;
+}
+
+#services .service-content, 
+#works .works-content, 
+#teams .teams-content,
+#contact .contact-content{
+    text-align: center;
+    font-size: 18px;
+}
+#services .service-content h2, 
+#works .works-content h2, 
+#teams .teams-content h2,
+#contact .contact-content h2{
+    margin: 20px 0;
+}
+#services .service-content p, 
+#works .works-content p, 
+#teams .teams-content p,
+#contact .contact-content p {
+    /* border: 1px solid red; */
+    margin: 0px 20% 30px 20%;
+    text-align-last: center;
+}
+
+#services .service, #teams .team{
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+}
+
+
+#services .service .service-item-1, #services .service .service-item-3{
+    width: 33.3%;
+    line-height: 1.7;
+    align-content: center;
+}
+#services .service .service-item-1{
+    text-align: right;
+}
+
+#services .service .service-item-2{
+    align-self: center;
+}
+#services .service .service-item-2 img{
+    width: 250px;
+}
+
+#services .service .service-item img{
+    width: 90px;
+    height: 90px;
+}
+
+
+/* Work section other css are above  */
+#works{
+    background-color: #b1b1d8;
+}
+
+#works .work{
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items:center;
+    width: 100%;
+}
+
+#works .work .work-item-1 img{
+    width: 450px;
+    display: block;
+}
+
+#works .work .work-item-1{
+    line-height: 1.7;
+    justify-self: center;
+}
+#works .work .work-item-2{
+    width: 40%;
+    line-height: 1.695;
+    justify-self: center;
+}
+
+.work-item .work-heading {
+    background-color: #06005c;
+    color: white;
+    padding: 12px;
+    width: 100%;
+    font-size: 0.9rem;
+    text-align: left;
+    border: none;
+    outline: none;
+}
+
+.work-item .work-description {
+    padding: 5px 18px;
+    background-color: white;
+    overflow: hidden;
+}
+
+#news{
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-around;
+}
+
+.news-right{
+    background: url(/images/works-img/02.jpg) no-repeat center center/cover;
+    width: 100%;
+}
+.news-left{
+    background: url(/images/works-img/03.jpg) no-repeat center center/cover;
+    width: 100%;
+    
+}
+
+.news-img{
+    background-color: #06005cb3;
+    width: 100%;
+    height: 100%;
+    padding: 60px;
+    line-height: 1.7 ;
+}
+
+.news-img p, .news-img h2, .news-img h3{
+    color: white;
+    letter-spacing: 2px;
+}
+
+.news-img a{
+    display: block;
+    border: 1px solid white;
+    text-align: center;
+    padding: 5px;
+    margin-top: 10px;
+    width: 100px;
+}
+
+.news-img a:hover{
+    background-color: rgb(6, 0, 92);
+}
+
+
+/* team section other css are above  */
+#teams{
+    background-color: #a6a6f8;
+}
+
+#teams .team .team-item-1, #teams .team .team-item-2, #teams .team .team-item-3{
+    line-height: 1.7;
+    text-align: center;
+}
+#teams .team .team-member{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    overflow: hidden;
+    box-shadow: 5px 5px 5px 5px  #cccdf8;
+
+}
+#teams .team .team-item img{
+    display: block;
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+}
+
+
+/* contact section other css are above  */
+#contact{
+    background-color: #c2c2f7;
+}
+
+#contact input, #contact textarea, #contact a{
+    display: block;
+    width: 40%;
+    margin: 0 auto 10px auto;
+    border: none;
+    outline: none;
+    padding: 20px;
+    font-size: 1.1rem;
+    color: black;
+    background-color: white;
+}
+
+#contact textarea{
+    resize: none;
+}
+
+#contact a{
+    color: white;
+    background-color: #06005c;
+    font-size: 1.5rem;
+    padding: 10px;
+}
+#contact a:hover{
+    color: white;
+    background-color: #06005ccc;
+}
+
+
+footer{
+    background-color: #e9e8fc;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-section{
+    /* border: 1px solid red; */
+    width: 25%;
+    padding: 30px;
+    
+}
+
+.footer-section h2{
+    margin-bottom: 16px;
+}
+.footer-section p{
+    font-size: 18px;
+}
+
+.footer-section li{
+    display: inline-block;
+    width: 100%;
+    color: black;
+    border-bottom: 1px solid white;
+    margin-bottom: 17px;
+}
+.footer-section li a{
+    color: black;
+}
+.footer-section li:hover{
+    cursor: pointer;
+    border-bottom-color: #06005c;
+}
+
+.copyright{
+    background-color: #06005c;
+    color: white;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+}
+
+
+@media only screen and (max-width: 900px) {
+    #banner .banner-block{
+        top: 15%;
+        width: 40%;
+    }
+    
+    #banner .banner-block h4{
+        font-size: 34px;
+    }
+     #banner .banner-block p{
+        font-size: 18px;
+    }
+    #banner .banner-block a{
+        padding: 5px 20px;
+        font-weight: normal;
+        width: 120px;
+    } 
+
+    #services .service .service-item-2{
+        display: none;
+    }
+
+    #services .service-content p, 
+    #works .works-content p, 
+    #teams .teams-content p,
+    #contact .contact-content p {
+        margin: 0px 10% 30px 10%;
+    }
+
+    #teams .team .team-member{
+        width: 150px;
+        height: 150px;
+        margin: 10px auto ;
+    
+    }
+    #teams .team .team-item img{
+        width: 150px;
+        height: 200px;
+    }
+
+    #contact input, #contact textarea, #contact a{
+        width: 80%;
+    }
+
+    .footer-section{
+    width: 33%; 
+    }
+}
+
+@media only screen and (max-width: 830px){
+    #nav{
+        justify-content: space-around;
+        padding: 5px 25px 0px 20px;
+    }
+    #banner .banner-block{
+        top: 5%;
+    }
+    
+    #banner .banner-block h4{
+        font-size: 28px;
+    }
+     #banner .banner-block p{
+        font-size: 18px;
+    }
+    #banner .banner-block a{
+        font-size: 16px;
+    } 
+
+    #works .work .work-item-1 img{
+        width: 400px;
+    }
+    #works .work .work-item-2{
+        line-height: 1.2;
+    }
+
+    #teams .team-item h2{
+        font-size: 18px;
+    } 
+    #teams .team-item h3{
+        font-size: 16px;
+    } 
+
+    #news{
+        flex-wrap: wrap;
+    } 
+}
+
+@media only screen and (max-width: 746px){
+    #banner .banner-block{
+        top: 1%;
+        left: 2%;
+    }
+    #banner .banner-block h4{
+        font-size: 25px;
+    }
+    #banner .banner-block p{
+        font-size: 15px;
+    }
+
+    #services .service-content p, 
+    #works .works-content p, 
+    #teams .teams-content p,
+    #contact .contact-content p {
+        margin: 0px 0% 10px 0%;
+    }
+
+    #services .service .service-item-1, #services .service .service-item-3{
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+    }
+    .service-item img{
+        margin-top: 10px;
+    }
+
+    #works .work .work-item-1 img{
+        display: none;
+    }
+
+    #works .work .work-item-2{
+        width: 100%;
+        line-height: 1.7;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    #banner .banner-block{
+        background-color: rgb(151, 151, 248);
+        width: 100%;
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+    #banner .banner-block h4{
+        font-size: 42px;
+    }
+    
+    #banner .banner-block p{
+        font-size: 18px;
+        color: black;
+    }
+
+    #works .work .work-item-2 {
+        margin-top: 10px;
+    }
+
+    #teams .team{
+        flex-direction: column;
+    }
+
+    footer{
+        flex-direction: column;
+    }
+    .footer-section{
+        width: 100%;
+        padding: 10px 20px;
+    }
+}
+
+@media only screen and (max-width: 420px){
+    .menu{
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+    .menu-links{
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+    .menu-links li{
+        margin-top: 5px;
+        border-bottom: 1px solid white;
+        width: 100%;
+        text-align: center;
+    }
+
+    p{
+        font-size: 16px;
+    }
+
+    #contact input, #contact textarea, #contact a{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 220px){
+    #teams .team .team-member{
+        width: 100px;
+        height: 100px;
+        margin: 10px auto ;
+    
+    }
+    #teams .team .team-item img{
+        width: 100px;
+        height: 100px;
+    }
+    #teams .team-item h2{
+        font-size: 14px;
+    } 
+    #teams .team-item h3{
+        font-size: 12px;
+    } 
+}
